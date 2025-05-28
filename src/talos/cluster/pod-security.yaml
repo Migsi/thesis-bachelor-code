@@ -1,0 +1,11 @@
+---
+cluster:
+  apiServer:
+    admissionControl:
+      - name: PodSecurity
+        configuration:
+          exemptions:
+            namespaces:
+              - nvidia-device-plugin
+              - volcano-system
+

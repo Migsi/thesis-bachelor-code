@@ -1,0 +1,6 @@
+---
+machine:
+  kubelet:
+    extraArgs:
+      rotate-server-certificates: true
+

@@ -1,0 +1,6 @@
+---
+machine:
+  install:
+    extraKernelArgs:
+        - console=ttyS0,115200
+
