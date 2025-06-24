@@ -1,0 +1,8 @@
+ARG IMAGE
+FROM ghcr.io/pytorch/torchx:0.8.0dev0
+
+COPY --exclude=**/.venv . .
+
+ENV AWS_ACCESS_KEY_ID="<access key that will be leaked if specified here>"
+ENV AWS_SECRET_ACCESS_KEY="<access key that will be leaked if specified here>"
+ENV AWS_DEFAULT_REGION="eu-central-1"

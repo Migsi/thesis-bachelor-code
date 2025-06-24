@@ -1,0 +1,3 @@
+# Ignore training logs used for plots and resulting plots
+
+results*/

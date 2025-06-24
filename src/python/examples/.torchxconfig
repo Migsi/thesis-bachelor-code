@@ -1,0 +1,14 @@
+[cli:run]
+# Run via kubernetes by default
+scheduler = kubernetes
+# Define alternative workspace, e.g. subfolder only
+# workspace = "file://."
+
+[component:dist.ddp]
+# Ensure the "latest" torchx image is used
+image = ghcr.io/pytorch/torchx:0.8.0dev0
+
+[kubernetes]
+namespace = default
+queue = default
+image_repo = migsi/torchx_playground

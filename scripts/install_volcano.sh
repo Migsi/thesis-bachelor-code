@@ -12,5 +12,5 @@ kubectl apply -f "${SOURCE_KUBERNETES_PATH}/manifests/volcano-dashboard.yaml"
 #kubectl apply -f https://raw.githubusercontent.com/volcano-sh/dashboard/main/deployment/volcano-dashboard.yaml
 
 # Forward port from localhost to dashboard
-# kubectl port-forward svc/volcano-dashboard 8080:80 -n volcano-system --address 127.0.0.1
+# kubectl port-forward svc/volcano-dashboard 8080:8080 -n volcano-system --address 127.0.0.1
 
